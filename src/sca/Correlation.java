@@ -24,7 +24,7 @@ public class Correlation {
                 tracesample.add(powertraces.get(trace250).get(sample10000));
             }
 
-            // Calculate a DPA value for this key guess
+            // Calculate a CPA value for this key guess
             float cpaValue = (float) getPearsonCorrelationScore(hanmmingweight,tracesample);//强制转换
             cpaValues[sample10000] = cpaValue;
         }

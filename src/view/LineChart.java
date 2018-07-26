@@ -23,7 +23,7 @@ public class LineChart {
         JFreeChart mChart = ChartFactory.createLineChart(
                 isDPA? "DPA前8bits侧信道结果折线图":"CPA前8bits侧信道结果折线图",//图名字
                 "采样编号",//横坐标
-                isDPA?"Power":"Correlation",//纵坐标
+                isDPA?"Differencial":"Correlation",//纵坐标
                 mDataset,//数据集
                 PlotOrientation.VERTICAL,
                 true, // 显示图例
